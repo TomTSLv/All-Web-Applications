@@ -1,0 +1,9 @@
+Name of product:Red
+Product description:Red is the fourth studio album by American singer-songwriter Taylor Swift. It was released on October 22, 2012, by Big Machine Records, as the follow-up to her third studio album, Speak Now (2010).
+Quantity:300
+Cost:13.29
+
+Name of product:1989
+Product description:1989 is the fifth studio album by American singer-songwriter Taylor Swift. It was released on October 27, 2014, through Big Machine Records.
+Quantity:500
+Cost:12.69

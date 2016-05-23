@@ -1,0 +1,35 @@
+/*This file serves as the style configuration file for online.php program*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css?family=Varela+Round');
+}
+
+body{
+	background-color: #FFFAFA;
+}
+
+h1{
+	text-align: center;
+}
+
+p,form{
+	font-size: 1em;
+	font-family: chalkboard;
+}
+
+ul, li{
+	list-style: none;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: chalkboard;
+}
+
+h2{
+	text-decoration: underline;
+}
+
+#receipt{
+	background-color: #F0F8FF;
+	text-align: center;
+}

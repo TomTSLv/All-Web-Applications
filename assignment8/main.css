@@ -1,0 +1,35 @@
+/*Style sheet for store.php file*/
+
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+
+body{
+	background-color: #FFFAFA;
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+}
+
+p,label{
+	font-size: 1.2em;
+	font-family: chalkboard;
+}
+
+label{
+	margin: 5px;
+}
+
+aside{
+	position: absolute;
+	right:5px;
+	top:5px;
+}

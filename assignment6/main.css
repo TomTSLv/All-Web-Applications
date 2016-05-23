@@ -1,0 +1,39 @@
+/*Style file for the photography preview website*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css?family=Varela+Round');
+}
+
+body{
+	background-color: #FFF5EE;
+}
+
+h1,h2{
+	font-family: Montserrat;
+}
+
+h1{
+	text-align: center;
+	font-size: 2em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+p,button{
+	font-family: chalkboard;
+}
+
+button{
+	margin:auto;
+	font-size: 1.2em;
+	cursor: pointer;
+	border-style: outset;
+}
+
+#square{
+	margin-top: 10px;
+	left: 1000px;
+}

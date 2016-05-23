@@ -1,0 +1,40 @@
+/*This file works as all the styles for calendar website*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css?family=Varela+Round');
+}
+
+body{
+	background-color: #F5F5DC;
+}
+
+h1{
+	font-family: Montserrat;
+	font-size: 2em;
+	text-align: center;
+}
+
+#input{
+	text-align: center;
+	border-style: outset;
+	border-width: 5px;
+	border-radius: 5px;
+	border-color: #57068c;
+	font-family: chalkboard;
+	font-size: 1.5em;
+}
+
+label{
+	margin-top: 20px;
+}
+
+button{
+	margin: 20px;
+}
+
+p{
+	font-family: chalkboard;
+	font-size: 2em;
+	text-align: center;
+}

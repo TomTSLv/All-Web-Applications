@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Online Store</title>
+	<link rel="stylesheet" type="text/css" href="../assignment2/Comment.css">
+	<link rel="stylesheet" type="text/css" href="../assignment2/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<style>
+		#main_page{
+			width: 98%;
+		}
+		table{
+			margin: 10px;
+			padding: 10px;
+		}
+		button{
+			margin-left: 0px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main_page" align=center>
+		<nav>
+			<ul>
+				<li><a href="../assignment2/index.html">Home</a></li>
+				<li><a href="../assignment2/Taylor Swift.html">Taylor Swift</a></li>
+				<li><a href="../assignment2/A-Lin.html">A-Lin</a></li>
+				<li><a href="../assignment2/Louis Cha.html">Louis Cha</a></li>
+				<li><a href="../assignment2/Haruki Murakami.html">Haruki Murakami</a></li>
+				<li><a href="../assignment2/Comment.html">Comments</a></li>
+				<li><a href="product.html">Products</a></li>
+			</ul>
+		</nav>
+		<figure></figure>
+		<header>
+			<h1>Music Album Online Store</h1>
+		</header>
+		<section>
+			<p style="padding-top:0">Welcome to the online store for music album by <b>Ariana Grande</b>. Thank you for your love for Ariana and supporting our store! Happy Shopping!</p>
+		</section>
+		<section>
+			<form name="form1" id="form1" action="#" onsubmit="setCookie(); receipt(); return false">
+				<p>Please enter the number of albums you want to buy for each one and click the "Check Out" button to get the receipt.</p>
+			  	<fieldset>
+			  		<table id="item1">
+			  			<tr onclick="purchase('Your Truly')">
+			  				<td><img src="Your Truly.jpg" width=100 height=100></td>
+			  				<td>&nbsp&nbsp&nbspYour Truly (August 30, 2013)</td>
+			  			</tr>
+			  		</table>
+			  		<p>Please click the item (either photo or word) to choose</p>
+			  		<br>
+			  		<label for="price1">Price: $</label>
+				  	<input type=number name="price1" id="price1" value=10.2 style="-webkit-appearance:none"><br>
+			  		<div id="product1" style="visibility:hidden">
+						<label for="quantity1">Quantity Ordered: </label>
+						<input type=number name="quantity1" id="quantity1" onchange="total()" value=0 min=0>
+						<label for="subtotal1">Subtotal $</label>
+						<input type=number name="subtotal1" id="subtotal1" value=0 readonly>
+					</div>
+			  	</fieldset>
+
+			  	<fieldset>
+			  		<table id="item2">
+			  			<tr onclick="purchase('My Everything')">
+			  				<td><img src="My Everything.jpg" width=100 height=100></td>
+			  				<td>&nbsp&nbsp&nbspMy Everything (August 22, 2014)</td>
+			  			</tr>
+			  		</table>
+			  		<p>Please click the item (either photo or word) to choose</p>
+			  		<br>
+					<label for="price2">Price: $</label>
+					<input type=number name="price2" id="price2" value=8.89 readonly><br>
+			  		<div id="product2" style="visibility:hidden">
+						<label for="quantity2">Quantity Ordered: </label>
+						<input type=number name="quantity2" id="quantity2" onchange="total()" value=0 min=0>&nbsp&nbsp&nbsp
+						<label for="subtotal2">Subtotal $</label>
+						<input type=number name="subtotal2" id="subtotal2" value=0 readonly>
+					</div>
+			  	</fieldset>
+
+			  	<fieldset>
+			  		<label for="delivery"><b>Delivery Method: </b></label>
+			  		<input type=radio name="delivery" id="pickup" value="will-call pickup" onclick="changeShipCost();total()">will-call pickup
+			  		<input type=radio name="delivery" id="shipping" value="shipping" onclick="changeShipCost();total()" checked>shipping
+			  		<br>
+			  		<label for="shipcost">Shipping Cost: $</label>
+			  		<input type=number name="shipcost" id="shipcost" value=16.5 readonly>
+			  	</fieldset>
+
+			  	<fieldset>
+			  		<p><b>Personal Information: </b></p>
+				  	<label for="firstname">First Name: </label>
+				  	<input type=text name="firstname" id="firstname">&nbsp&nbsp&nbsp&nbsp
+				  	<label for="lastname">Last Name: </label>
+				  	<input type=text name="lastname" id="lastname">
+			 		<br>
+			 		<label for="phone">Phone # (XXXXXXXXXX or (XXX)XXX-XXXX): </label>
+			 		<input type=text name="phone" id="phone">
+			 		<br>
+			 		<label for="email">Email: </label>
+				  	<input type=text name="email" id="email">
+			 		<br>
+			 		<label for="address">Street Address: </label>
+			 		<input type=text name="address" id="address">
+					<br>
+			 		<label for="city">City: </label>
+			 		<input type=text name="city" id="city">
+			  		<label for="state">State: </label>
+					<select name="state" id="state">
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+					<label for="zip">Zip Code: </label>
+					<input type=number name="zip" id="zip">
+			 		<br>
+			 		<p><b>Credit Card Information: </b></p>
+			 		<label for="type">Credit Card Type: </label>
+			 		<select name="type" id="type">
+			 			<option value="AMEX">American Express</option>
+			 			<option value="VISA">Visa</option>
+			 			<option value="MASTERCARD">MasterCard</option>
+			 			<option value="DISCOVER">Discover</option>
+			 		</select>
+			 		<br>
+			 		<label for="cardNum">Card Number (16 Digits): </label>
+			 		<input type=number name="cardNum" id="cardNum">
+			 		<br>
+			 		<label for="expire">Expiration Date (MM/YY): </label>
+			 		<input type=text name="expire" id="expire" maxlength=5>
+			 		<label for="code">Security Code (XXX): </label>
+			 		<input type=number name="code" id="code">
+			  	</fieldset>
+			  	<fieldset>
+			  		<label for="total" style="text-decoration: underline"><b>Grand Total: </b></label>
+			  		<input type=number name="grandtotal" id="grandtotal" value=16.5 readonly>
+			  		<br>
+			  		<button type=submit name="submit" id="submit">Check Out</button>&nbsp&nbsp&nbsp&nbsp
+			  		<input type=reset name="reset" id="reset">
+			  	</fieldset>
+			</form>
+		</section>
+		<section>
+			<footer>
+				<hr>
+				<p>Copyright &copy Tom Tianshu Lyu</p>
+				<p>Picture Credit to <a href="https://www.google.com/imghp?hl=en&tab=wi&ei=vVoIVr6XAcmwe-WPp7gH&ved=0CBUQqi4oAQ" class="footer">Google Images</a></p>
+				<p>Introduction Reference to <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+				</p>
+			</footer>
+		</section>
+	</div>
+	<script type="text/javascript" src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/*Style for Comment Page*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('https://fonts.googleapis.com/css?family=Varela+Round');
+}
+
+#main_page{
+	font-family: chalkboard;
+}
+
+form label, form p{
+	line-height: 2;
+}
+
+option{
+	font-style: italic;
+}
+
+#nationality{
+	float: left;
+}
+
+legend{
+	font-family: "Montserrat";
+	font-size: 1.7em;
+	color: #57068c;
+}
+
+button{
+	margin-left: 45%;
+}

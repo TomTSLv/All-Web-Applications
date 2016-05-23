@@ -1,0 +1,48 @@
+/* This is the external CSS File for my Assignment1. 
+This is not all the style configurations for my pages.
+Based on the instruction, there are also inline and internal CSSs that control the style of my pages.*/
+
+h1{
+	font-family: fantasy;
+}
+p,h2{
+	font-family: verdana;
+}
+body{
+	background: #F8F8FF;
+	font-size: 14px 1em;
+}
+td{
+	width: 500px;
+	font-family: monospace;
+}
+b{
+	font-family: Geneva;
+	font-size: 25px;
+}
+a.nav{
+	font-family: verdana;
+	font-size: 25px;
+	color: #57068c;
+}
+a.nav:hover{
+	color: #1E90FF;
+}
+a.nav:link{
+	text-decoration: none;
+}
+a.content{
+	color: #57068c;
+}
+a.content:link{
+	text-decoration: none;
+}
+a.content:hover{
+	color: #1E90FF;
+}
+.title{
+	text-align: right;
+}
+.subtitle{
+	text-align: center;
+}

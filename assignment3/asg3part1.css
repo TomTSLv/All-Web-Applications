@@ -1,0 +1,10 @@
+/*Styles of asg3part1.html*/
+
+div{
+	text-align: center;
+	font-family: chalkboard;
+}
+
+#swap, #randomArray, #newdoc, #birthday{
+	visibility: hidden;
+}

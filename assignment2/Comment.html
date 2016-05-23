@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Comments</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="Comment.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="main_page">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Taylor Swift.html">Taylor Swift</a></li>
+				<li><a href="A-Lin.html">A-Lin</a></li>
+				<li><a href="Louis Cha.html">Louis Cha</a></li>
+				<li><a href="Haruki Murakami.html">Haruki Murakami</a></li>
+				<li><a href="Comment.html">Comments</a></li>
+				<li><a href="../assignment5/product.html">Products</a></li>
+			</ul>
+		</nav>
+		<header>
+			<figure>
+				<img src="./images/collage1.jpg" class="banner" title="banner" alt="Cannot show the banner" width="1000" height="196">
+			</figure>
+			<hr>
+			<h1>Any Comments?</h1>
+		</header>
+		<section>
+			<form action="mailto:tl1443@nyu.edu" method="get" autocomplete="on">
+			  	<fieldset> <legend>Contact information:</legend>
+				  	<label for="firstname">First Name: </label>
+				  	<input type=text name="firstname" id="firstname" novalidate="novalidate" required>&nbsp&nbsp&nbsp
+					<label for="lastname">Last Name: </label>
+					<input type=text name="lastname" id="lastname" required>
+					<br>
+					<label for="gender">Select Your Gender: </label>
+				  	<input type=radio name="gender" id="gender" value="male">Male
+				  	<input type=radio name="gender" id="gender" value="female">Female
+					<input type=radio name="gender" id="gender" value="privacy">Don't want to tell
+					<br>
+			 		<label for="email">Email:</label>
+			  		<input type=email name="email" id="email">
+			  		<p id="nationality">What nationality are you?&nbsp&nbsp&nbsp</p>
+			  		<br>
+			  		<select name="nationality" id="nationality">
+					  	<optgroup label="America">
+					    	<option name="US" id="US" value="US">US</option>
+					    	<option name="Canada" id="Canada" value="Canada">Canada</option>
+					    	<option name="Mexico" id="Mexico" value="Mexico">Mexico</option>
+					  	</optgroup>
+					  	<optgroup label="Asia">
+					    	<option name="China" id="China" value="China">China</option>
+					    	<option name="Korea" id="Korea" value="Korea">Korea</option>
+					    	<option name="Japanese" id="Japanese" value="Japanese">Japanese</option>
+					  	</optgroup>
+					</select>
+			  	</fieldset>
+
+			  	<fieldset> <legend>Comments about the Website:</legend>
+				  	<label for="likescale">On scale 1 to 10, rate how you like my website: </label>
+				  	<input type=number min=1 max=10 name="likescale" id="likescale">
+				  	<br>
+				  	<label for="frequencyscaleread">rate on scale how often do you read: </label><br>
+				  	Very Unusual<input type=range min=1 max=5 name="frequencyscaleread" id="frequencyscaleread">Very Often
+
+			 		<br>
+			 		<label for="frequencyscalemusic">rate on scale how often do you listen to music: </label><br>
+				  	Very Unusual<input type=range min=1 max=5 name="frequencyscalemusic" id="frequencyscalemusic">Very Often
+			 		<br>
+			 		<label for="preference">After seeing the website, which singer and writer do you like better? </label><br>
+			  		<input type=checkbox name="preference" id="preference" value="Taylor Swift" checked>Taylor Swift
+			  		<input type=checkbox name="preference" id="preference" value="A-Lin">A-Lin
+				  	<input type=checkbox name="preference" id="preference" value="Louis Cha" checked>Louis Cha
+				  	<input type=checkbox name="preference" id="preference" value="Haruki Murakami">Haruki Murakami
+					<br>
+			  		<label for="other">Any other 
+			  			<select name="occupation" id="occupation" multiple>
+			  				<option selected>Singer</option>
+				  			<option>Writer</option>
+				  		</select>
+				  		 you like? 
+				  	</label>
+			 		<input type=text name="other" id="other">
+			 		<br>
+			  		<label for="color">Do you prefer any better colors for my background? </label>
+			  		<input type=color name="color" id="color"><br>
+				  	<p>
+				  		<label for="comment">Comments:</label>
+						<textarea name="comment" id="comment" cols=50 rows=6></textarea>
+			  		</p>
+			  		<label for="quiz">Finally, a quiz question: in what year did album Fearless release?</label>
+			  		<input type=date name="quiz" id="quiz">
+			  	</fieldset>
+			  	<button type="submit" name="submit" id="submit" autofocus="autofocus" align="center"><img src="./images/Submit.jpg" width="120" height="40"></button>
+			</form>
+		</section>
+		<section>
+			<footer>
+				<hr>
+				<p>Copyright &copy Tom Tianshu Lyu</p>
+				<p>Picture Credit to <a href="https://www.google.com/imghp?hl=en&tab=wi&ei=vVoIVr6XAcmwe-WPp7gH&ved=0CBUQqi4oAQ" class="footer">Google Images</a></p>
+				<p>Introduction Reference to <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
+				</p>
+			</footer>
+		</section>
+		<aside><img src="./images/thank.jpg"></aside>
+	</div>
+</body>
+</html>

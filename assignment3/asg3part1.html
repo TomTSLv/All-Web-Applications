@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lottery</title>
+	<script type="text/javascript" src="asg3part1.js"></script>
+	<link rel="stylesheet" type="text/css" href="asg3part1.css">
+</head>
+<body>
+	<div id="header">
+		<h1 id="title">Win a New iPhone 6s/6s Plus!!!</h1>
+		<button onclick="change()">Click here to participate</button>
+		<hr>
+	</div>
+	<div id="swap">
+		<h2>Which iPhone Size Do You Prefer?</h2>
+		<p id="p1" onclick="swap()">I prefer 6s.</p>
+		<p id="p2" onclick="swap()">I prefer 6s Plus</p>
+		<hr>
+	</div>
+	<div id="randomArray">
+		<h2>Randomly Choose the Detailed Style of Your iPhone</h2>
+		<div id="element"></div>
+		<div>The prize you get (vary based on what you prefer in the previous question): </div>
+		<div id="prize"></div>
+		<button onclick="randarray()">Win a Prize</button>
+		<hr>
+	</div>
+	<div id="newdoc">
+		<h2>Click the Image to See Introduction</h2>
+		<img src="iPhone-6s.jpg" onclick="newdoc()">
+		<hr>
+	</div>
+	<div id="birthday">
+		<h2>A Useful Tool: Age Comparison by Birthday</h2>
+		<label for="fullname1">First Person's Full Name:</label>
+		<input type=text name="fullname1" id="fullname1">
+		<br>
+		<p>First Person's Birthday:</p>
+		<label for="month1">Month</label>
+		<input type=text name="month1" id="month1">&nbsp&nbsp&nbsp
+		<label for="day1">Day</label>
+		<input type=text name="day1" id="day1">&nbsp&nbsp&nbsp
+		<label for="year1">Year</label>
+		<input type=text name="year1" id="year1">
+		<br>
+		<label for="fullname2">Second Person's Full Name:</label>
+		<input type=text name="fullname2" id="fullname2">
+		<br>
+		<p>Second Person's Birthday:</p>
+		<label for="month2">Month</label>
+		<input type=text name="month2" id="month2">&nbsp&nbsp&nbsp
+		<label for="day2">Day</label>
+		<input type=text name="day2" id="day2">&nbsp&nbsp&nbsp
+		<label for="year1">Year</label>
+		<input type=text name="year2" id="year2">
+		<h1 id="output"></h1>
+		<br>
+		<br>
+		<button onclick="birthday()">Begin Comparing</button>
+	</div>
+</body>
+</html>
